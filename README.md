@@ -43,9 +43,9 @@
   cd KeybMacro
 ```
 Ouvrir le projet avec Qt Creator
-    Compiler en Release
-    Exécuter le binaire généré (.exe)
-    Qt 6 recommandé. Testé sur Windows 10 & 11.
+Compiler en Release
+Exécuter le binaire généré (.exe)
+Qt 6 recommandé. Testé sur Windows 10 & 11.
 
 📦 Téléchargement
 
