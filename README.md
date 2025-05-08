@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/vava62600/KeybMacro/assets/github/logo.png" alt="KeybMacro Logo" width="150"/>
+  <img src="assets/github/logo.png" alt="KeybMacro Logo" width="150"/>
 </p>
 
 <h1 align="center">KeybMacro (KeyBoardMacro)</h1>
