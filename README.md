@@ -5,7 +5,7 @@
 <h1 align="center">KeybMacro (KeyBoardMacro)</h1>
 
 <p align="center">
-  🔧 Automatisation clavier & souris pour Windows – basé sur Qt en C++
+  🔧 Automatisation clavier & souris pour Windows et Linux – basé sur Qt en C++
 </p>
 
 <p align="center">
