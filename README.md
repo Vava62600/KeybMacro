@@ -49,4 +49,4 @@ Qt 6 recommandé. Testé sur Windows 10 & 11.
 
 📦 Téléchargement
 
-Téléchargez la dernière version <a href="https://github.com/vava62600/KeybMacro/releases/latest/KeybMacro.zip">exécutable</a> directement et l'<a href="https://github.com/Vava62600/KeybMacro/releases/latest/KeybMacro_amd64.exe">installateur</a> sous Windows.
+Téléchargez la dernière version <a href="https://github.com/vava62600/KeybMacro/releases/latest/download/KeybMacro.zip">exécutable</a> directement et l'<a href="https://github.com/Vava62600/KeybMacro/releases/latest/download/KeybMacro_amd64.exe">installateur</a> sous Windows.
