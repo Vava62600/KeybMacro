@@ -5,7 +5,7 @@
 <h1 align="center">KeybMacro (KeyBoardMacro)</h1>
 
 <p align="center">
-  🔧 Automatisation clavier & souris pour Windows et Linux – basé sur Qt en C++
+  🔧 Automatisation clavier & souris pour Windows et Linux – basé sur Avalonia et écrit en C#, C++, HTML et en Python
 </p>
 
 <p align="center">
@@ -26,7 +26,7 @@
 ### Fonctionnalités :
 
 - 🎯 Création de macros clavier et souris
-- 🖱️ Interface Qt intuitive
+- 🖱️ Interface Avalonia intuitive
 - ⏱️ Délai personnalisable entre les actions
 - 🔁 Répétition en boucle des macros
 - 📁 Sauvegarde de profils utilisateurs
