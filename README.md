@@ -21,7 +21,7 @@
 
 ## Présentation
 
-**KeybMacro** est un logiciel open-source sous Windows permettant d'automatiser des séquences clavier et souris. Développé en **C++, C et Python avec la librarie Qt**, il est conçu pour être rapide, personnalisable et simple d'utilisation.
+**KeybMacro** est un logiciel open-source sous Windows permettant d'automatiser des séquences clavier et souris. Développé en **C#, C++, HTML et Python avec la librarie Avalonia**, il est conçu pour être rapide, personnalisable et simple d'utilisation.
 
 ### Fonctionnalités :
 
