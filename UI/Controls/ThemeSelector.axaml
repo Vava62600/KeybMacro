@@ -1,0 +1,23 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="KeybMacro.UI.Controls.ThemeSelector">
+  <StackPanel Spacing="8">
+    <TextBlock Text="Sélection du thème" FontSize="16" />
+    <ComboBox Name="ThemeList">
+      <ComboBoxItem Content="Default" />
+      <ComboBoxItem Content="MacOS" />
+      <ComboBoxItem Content="Win11" />
+      <ComboBoxItem Content="WinXP" />
+      <ComboBoxItem Content="Win95" />
+      <ComboBoxItem Content="Linux" />
+    </ComboBox>
+    <TextBlock Text="Palette de couleurs" FontSize="16" Margin="0,10,0,0" />
+    <ComboBox Name="PaletteList">
+      <ComboBoxItem Content="Blue" />
+      <ComboBoxItem Content="Green" />
+      <ComboBoxItem Content="Red" />
+      <ComboBoxItem Content="Orange" />
+      <ComboBoxItem Content="Grey" />
+    </ComboBox>
+  </StackPanel>
+</UserControl>

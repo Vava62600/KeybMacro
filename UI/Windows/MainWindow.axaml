@@ -1,0 +1,33 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:controls="clr-namespace:KeybMacro.UI.Controls"
+        x:Class="KeybMacro.UI.Windows.MainWindow"
+        Title="KeybMacro" Width="800" Height="600">
+  <DockPanel>
+    <Menu DockPanel.Dock="Top">
+      <MenuItem Header="Fichier">
+        <MenuItem Header="Nouveau" />
+        <MenuItem Header="Édition" />
+        <MenuItem Header="Exporter les paramètres" />
+        <MenuItem Header="À propos" Click="OnAboutClick" />
+        <MenuItem Header="Quitter" InputGesture="Ctrl+Q" Click="OnQuitClick" />
+      </MenuItem>
+      <MenuItem Header="Aide">
+        <MenuItem Header="Aide sur GitHub" Click="OnGitHubHelpClick" />
+        <MenuItem Header="Documentation" Click="OnDocClick" />
+        <MenuItem Header="Bug trouvé ?" Click="OnBugClick" />
+      </MenuItem>
+    </Menu>
+    <Grid>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="2*" />
+        <ColumnDefinition Width="3*" />
+      </Grid.ColumnDefinitions>
+      <controls:MacroList Grid.Column="0" />
+      <StackPanel Grid.Column="1" Spacing="10">
+        <controls:ActionEditor />
+        <controls:ThemeSelector />
+      </StackPanel>
+    </Grid>
+  </DockPanel>
+</Window>

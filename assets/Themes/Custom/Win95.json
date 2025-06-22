@@ -1,0 +1,10 @@
+{
+  "Background": "#FFC0C0C0",
+  "Foreground": "#FF000000",
+  "ControlBackground": "#FFC0C0C0",
+  "ControlBorder": "#FF000000",
+  "Accent": "#FF000080",
+  "AccentHover": "#FF000050",
+  "AccentDisabled": "#FF505050",
+  "StyleType": "Windows 95 Theme"
+}

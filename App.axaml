@@ -1,0 +1,9 @@
+<Application xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="KeybMacro.App">
+  <Application.Styles>
+    <FluentTheme Mode="Light" />
+    <StyleInclude Source="avares://KeybMacro/UI/Styles/BaseStyles.axaml" />
+    <StyleInclude Source="avares://KeybMacro/UI/Styles/ThemeBindings.axaml" />
+  </Application.Styles>
+</Application>

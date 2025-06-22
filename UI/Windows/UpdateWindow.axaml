@@ -1,0 +1,24 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KeybMacro.UI.Windows"
+        mc:Ignorable="d"
+        x:Class="KeybMacro.UI.Windows.UpdateWindow"
+        Title="{Binding TranslatedTitle}"
+        Width="600" Height="450"
+        CanResize="False">
+  <StackPanel Margin="10" Spacing="10">
+    <TextBlock Text="{Binding TranslatedHeader}" FontWeight="Bold" FontSize="18" />
+    
+    <!-- TextBox readonly avec changelog markdown brut (à styliser mieux avec un control markdown si possible) -->
+    <TextBox Text="{Binding Changelog}" IsReadOnly="True" AcceptsReturn="True" Height="300" VerticalScrollBarVisibility="Auto" />
+    
+    <Button Content="{Binding TranslatedMoreInfo}" HorizontalAlignment="Left" Width="180" Click="MoreInfo_Click" />
+
+    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Spacing="10">
+      <Button Content="{Binding TranslatedUpdateNow}" Width="120" Click="UpdateNow_Click" />
+      <Button Content="{Binding TranslatedLater}" Width="120" Click="Later_Click" />
+    </StackPanel>
+  </StackPanel>
+</Window>

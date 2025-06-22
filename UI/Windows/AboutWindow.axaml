@@ -1,0 +1,79 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="https://github.com/avaloniaui"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        x:Class="KeybMacro.UI.Windows.AboutWindow"
+        Title="À propos de KeybMacro"
+        Width="400" Height="520"
+        CanResize="False"
+        WindowStartupLocation="CenterOwner">
+
+  <ScrollViewer Margin="15">
+    <StackPanel HorizontalAlignment="Center" Spacing="15" MaxWidth="360">
+
+      <!-- Icône du projet 128x128 centrée -->
+      <Image Source="avares://KeybMacro/Assets/Icons/icon-dark.png"
+             Width="128" Height="128" HorizontalAlignment="Center"/>
+
+      <!-- Nom + Version avec badge -->
+      <StackPanel HorizontalAlignment="Center" Spacing="5">
+        <TextBlock Text="KeybMacro" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center"/>
+        <Image Source="https://img.shields.io/github/v/release/vava62600/KeybMacro?style=for-the-badge"
+               Width="180" Height="28" HorizontalAlignment="Center"/>
+      </StackPanel>
+
+      <!-- Description -->
+      <TextBlock TextWrapping="Wrap" TextAlignment="Center">
+        Logiciel open-source d'automatisation clavier, rapide, personnalisable, avec thèmes, plugins et gestion complète.
+      </TextBlock>
+
+      <!-- Équipe -->
+      <GroupBox Header="Équipe" Margin="0,10,0,0">
+        <StackPanel Margin="10" Spacing="5">
+          <TextBlock Text="Vava (Développeur principal et créateur)" />
+          <TextBlock Text="Contributeurs : Aucun pour le moment" FontStyle="Italic"/>
+        </StackPanel>
+      </GroupBox>
+
+      <!-- Traducteurs -->
+      <GroupBox Header="Traducteurs">
+        <StackPanel Margin="10" Spacing="5">
+          <TextBlock Text="Français (FR) : Vava62600,"/>
+          <TextBlock Text="Anglais (EN) : Vava62600,"/>
+        </StackPanel>
+      </GroupBox>
+
+      <!-- Technologies -->
+      <GroupBox Header="Langages utilisés">
+        <StackPanel Margin="10" Spacing="5">
+          <TextBlock Text="C#, C++, Python, Lua, HTML, CSS, JavaScript" />
+        </StackPanel>
+      </GroupBox>
+
+      <GroupBox Header="Bibliothèques / Libraries">
+        <StackPanel Margin="10" Spacing="5">
+          <TextBlock Text="AvaloniaUI, ReactiveUI, System.Text.Json, libX11, libXtst, user32.dll" />
+        </StackPanel>
+      </GroupBox>
+
+      <GroupBox Header="Plateformes supportées">
+        <StackPanel Margin="10" Spacing="5">
+          <TextBlock Text="Windows, Linux, macOS (à venir)" />
+        </StackPanel>
+      </GroupBox>
+
+      <!-- Lien GitHub -->
+      <TextBlock TextAlignment="Center" Margin="10,20,10,0">
+        <Hyperlink NavigateUri="https://github.com/vava62600/keybmacro" 
+                   PointerReleased="GitHubLink_PointerReleased"
+                   Foreground="Blue"
+                   TextDecorations="Underline">
+          Visitez le projet sur GitHub
+        </Hyperlink>
+      </TextBlock>
+
+      <Button Content="Fermer" HorizontalAlignment="Center" Width="100" Click="Close_Click" Margin="0,20,0,0"/>
+
+    </StackPanel>
+  </ScrollViewer>
+</Window>

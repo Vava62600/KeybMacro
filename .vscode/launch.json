@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "d:/Projets/KeybMacro/C++",
-      "program": "d:/Projets/KeybMacro/C++/build/Debug/outDebug",
+      "cwd": "d:/Projets/KeybMacro",
+      "program": "d:/Projets/KeybMacro/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

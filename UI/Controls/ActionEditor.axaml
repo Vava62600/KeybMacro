@@ -1,0 +1,14 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="KeybMacro.UI.Controls.ActionEditor">
+  <StackPanel Spacing="8">
+    <TextBlock Text="Ajouter une action" FontSize="18" FontWeight="Bold" />
+    <ComboBox Name="ActionSelector">
+      <ComboBoxItem Content="Attendre..." />
+      <ComboBoxItem Content="Envoyer une touche..." />
+      <ComboBoxItem Content="Exécuter une commande..." />
+      <ComboBoxItem Content="Envoyer une notification" />
+    </ComboBox>
+    <Button Content="Ajouter" Click="OnAddAction" />
+  </StackPanel>
+</UserControl>

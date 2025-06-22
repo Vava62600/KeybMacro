@@ -1,0 +1,14 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="KeybMacro.UI.Controls.MacroList">
+  <StackPanel Spacing="8">
+    <TextBlock Text="Macros disponibles" FontSize="18" FontWeight="Bold" />
+    <ItemsControl Name="MacroItems">
+      <ItemsControl.ItemTemplate>
+        <DataTemplate>
+          <Button Content="{Binding Name}" Click="OnMacroClick" />
+        </DataTemplate>
+      </ItemsControl.ItemTemplate>
+    </ItemsControl>
+  </StackPanel>
+</UserControl>

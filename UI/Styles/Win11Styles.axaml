@@ -1,0 +1,42 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+  <FontFamily x:Key="Win11Font">Segoe UI, Verdana, Arial, Tahoma</FontFamily>
+
+  <Style Selector="Button">
+    <Setter Property="FontFamily" Value="{DynamicResource Win11Font}"/>
+    <Setter Property="Background" Value="{DynamicResource AccentBrush}"/>
+    <Setter Property="Foreground" Value="White"/>
+    <Setter Property="BorderBrush" Value="{DynamicResource AccentBrush}"/>
+    <Setter Property="BorderThickness" Value="0"/>
+    <Setter Property="CornerRadius" Value="6"/>
+    <Setter Property="Padding" Value="10,6"/>
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate>
+          <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" CornerRadius="{TemplateBinding CornerRadius}">
+            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+          </Border>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+    <Style.Triggers>
+      <Trigger Property="IsPointerOver" Value="True">
+        <Setter Property="Background" Value="{DynamicResource AccentBrushHover}"/>
+      </Trigger>
+      <Trigger Property="IsPressed" Value="True">
+        <Setter Property="Background" Value="{DynamicResource AccentBrushDisabled}"/>
+      </Trigger>
+    </Style.Triggers>
+  </Style>
+
+  <Style Selector="TextBox">
+    <Setter Property="FontFamily" Value="{DynamicResource Win11Font}"/>
+    <Setter Property="Background" Value="{DynamicResource ControlBackgroundBrush}"/>
+    <Setter Property="BorderBrush" Value="{DynamicResource ControlBorderBrush}"/>
+    <Setter Property="BorderThickness" Value="1"/>
+    <Setter Property="CornerRadius" Value="6"/>
+    <Setter Property="Padding" Value="6,4"/>
+  </Style>
+
+</ResourceDictionary>

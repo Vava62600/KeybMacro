@@ -1,0 +1,46 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+  <!-- Police typique Windows 95 -->
+  <FontFamily x:Key="Win95Font">MS Sans Serif, Arial, Verdana, Tahoma</FontFamily>
+
+  <Style Selector="Button">
+    <Setter Property="FontFamily" Value="{DynamicResource Win95Font}"/>
+    <Setter Property="Background" Value="#C0C0C0"/>
+    <Setter Property="Foreground" Value="Black"/>
+    <Setter Property="BorderBrush" Value="Black"/>
+    <Setter Property="BorderThickness" Value="2"/>
+    <Setter Property="CornerRadius" Value="0"/>
+    <Setter Property="Padding" Value="4,2"/>
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate>
+          <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}">
+            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+          </Border>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+    <Style.Triggers>
+      <Trigger Property="IsPointerOver" Value="True">
+        <Setter Property="Background" Value="#000080"/>
+        <Setter Property="Foreground" Value="White"/>
+      </Trigger>
+      <Trigger Property="IsPressed" Value="True">
+        <Setter Property="Background" Value="#000050"/>
+        <Setter Property="Foreground" Value="White"/>
+      </Trigger>
+    </Style.Triggers>
+  </Style>
+
+  <!-- Autres contrôles spécifiques Win95 (ex: TextBox) -->
+  <Style Selector="TextBox">
+    <Setter Property="FontFamily" Value="{DynamicResource Win95Font}"/>
+    <Setter Property="Background" Value="#FFFFFF"/>
+    <Setter Property="BorderBrush" Value="Black"/>
+    <Setter Property="BorderThickness" Value="2"/>
+    <Setter Property="CornerRadius" Value="0"/>
+    <Setter Property="Padding" Value="3,2"/>
+  </Style>
+
+</ResourceDictionary>

@@ -1,0 +1,147 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+  <!-- Couleurs communes -->
+  <Color x:Key="AccentColorBlue">#0078D7</Color>
+  <Color x:Key="AccentColorGreen">#107C10</Color>
+  <Color x:Key="AccentColorRed">#D13438</Color>
+  <Color x:Key="AccentColorOrange">#FF8C00</Color>
+  <Color x:Key="AccentColorGrey">#666666</Color>
+
+  <!-- Palette par défaut (Blue) -->
+  <SolidColorBrush x:Key="AccentBrush" Color="{DynamicResource AccentColorBlue}"/>
+  <SolidColorBrush x:Key="AccentBrushHover" Color="#FF005A9E"/>
+  <SolidColorBrush x:Key="AccentBrushDisabled" Color="#FF8C8C8C"/>
+
+  <!-- Couleurs Light -->
+  <Color x:Key="BackgroundColorLight">#FFFFFFFF</Color>
+  <Color x:Key="ForegroundColorLight">#FF000000</Color>
+  <Color x:Key="ControlBackgroundLight">#FFF3F3F3</Color>
+  <Color x:Key="ControlBorderLight">#FFCCCCCC</Color>
+
+  <!-- Couleurs Dark -->
+  <Color x:Key="BackgroundColorDark">#FF1E1E1E</Color>
+  <Color x:Key="ForegroundColorDark">#FFFFFFFF</Color>
+  <Color x:Key="ControlBackgroundDark">#FF2D2D30</Color>
+  <Color x:Key="ControlBorderDark">#FF3E3E42</Color>
+
+  <!-- Brushes Light -->
+  <SolidColorBrush x:Key="BackgroundBrush" Color="{DynamicResource BackgroundColorLight}"/>
+  <SolidColorBrush x:Key="ForegroundBrush" Color="{DynamicResource ForegroundColorLight}"/>
+  <SolidColorBrush x:Key="ControlBackgroundBrush" Color="{DynamicResource ControlBackgroundLight}"/>
+  <SolidColorBrush x:Key="ControlBorderBrush" Color="{DynamicResource ControlBorderLight}"/>
+
+  <!-- Brushes Dark -->
+  <SolidColorBrush x:Key="BackgroundBrushDark" Color="{DynamicResource BackgroundColorDark}"/>
+  <SolidColorBrush x:Key="ForegroundBrushDark" Color="{DynamicResource ForegroundColorDark}"/>
+  <SolidColorBrush x:Key="ControlBackgroundBrushDark" Color="{DynamicResource ControlBackgroundDark}"/>
+  <SolidColorBrush x:Key="ControlBorderBrushDark" Color="{DynamicResource ControlBorderDark}"/>
+
+  <!-- Styles globaux -->
+  <Style Selector="Window">
+    <Setter Property="Background" Value="{DynamicResource BackgroundBrush}"/>
+    <Setter Property="Foreground" Value="{DynamicResource ForegroundBrush}"/>
+    <Setter Property="FontFamily" Value="Segoe UI, Verdana, Arial"/>
+    <Setter Property="FontSize" Value="14"/>
+  </Style>
+
+  <Style Selector="TextBlock">
+    <Setter Property="Foreground" Value="{DynamicResource ForegroundBrush}"/>
+  </Style>
+
+  <Style Selector="Button">
+    <Setter Property="Background" Value="{DynamicResource AccentBrush}"/>
+    <Setter Property="Foreground" Value="White"/>
+    <Setter Property="FontWeight" Value="SemiBold"/>
+    <Setter Property="Padding" Value="8,4"/>
+    <Setter Property="BorderThickness" Value="0"/>
+    <Setter Property="CornerRadius" Value="4"/>
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate>
+          <Border Background="{TemplateBinding Background}"
+                  CornerRadius="{TemplateBinding CornerRadius}">
+            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+          </Border>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+    <Style.Triggers>
+      <Trigger Property="IsPointerOver" Value="True">
+        <Setter Property="Background" Value="{DynamicResource AccentBrushHover}"/>
+      </Trigger>
+      <Trigger Property="IsEnabled" Value="False">
+        <Setter Property="Background" Value="{DynamicResource AccentBrushDisabled}"/>
+      </Trigger>
+    </Style.Triggers>
+  </Style>
+
+  <Style Selector="ListBox">
+    <Setter Property="Background" Value="{DynamicResource ControlBackgroundBrush}"/>
+    <Setter Property="BorderBrush" Value="{DynamicResource ControlBorderBrush}"/>
+    <Setter Property="BorderThickness" Value="1"/>
+  </Style>
+
+  <Style Selector="ListBoxItem">
+    <Setter Property="Padding" Value="6,2"/>
+    <Setter Property="Background" Value="Transparent"/>
+    <Setter Property="FocusAdorner" Value="{x:Null}"/>
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate>
+          <Border Background="{TemplateBinding Background}">
+            <ContentPresenter/>
+          </Border>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+    <Style.Triggers>
+      <Trigger Property="IsPointerOver" Value="True">
+        <Setter Property="Background" Value="{DynamicResource AccentBrushHover}"/>
+        <Setter Property="Foreground" Value="White"/>
+      </Trigger>
+      <Trigger Property="IsSelected" Value="True">
+        <Setter Property="Background" Value="{DynamicResource AccentBrush}"/>
+        <Setter Property="Foreground" Value="White"/>
+      </Trigger>
+    </Style.Triggers>
+  </Style>
+
+  <Style Selector="ComboBox">
+    <Setter Property="Background" Value="{DynamicResource ControlBackgroundBrush}"/>
+    <Setter Property="Foreground" Value="{DynamicResource ForegroundBrush}"/>
+    <Setter Property="BorderBrush" Value="{DynamicResource ControlBorderBrush}"/>
+    <Setter Property="BorderThickness" Value="1"/>
+    <Setter Property="Padding" Value="4,2"/>
+  </Style>
+
+  <Style Selector="TextBox">
+    <Setter Property="Background" Value="{DynamicResource ControlBackgroundBrush}"/>
+    <Setter Property="Foreground" Value="{DynamicResource ForegroundBrush}"/>
+    <Setter Property="BorderBrush" Value="{DynamicResource ControlBorderBrush}"/>
+    <Setter Property="BorderThickness" Value="1"/>
+    <Setter Property="Padding" Value="4,2"/>
+  </Style>
+
+  <Style Selector="Menu">
+    <Setter Property="Background" Value="{DynamicResource ControlBackgroundBrush}"/>
+    <Setter Property="Foreground" Value="{DynamicResource ForegroundBrush}"/>
+  </Style>
+
+  <Style Selector="MenuItem">
+    <Setter Property="Padding" Value="6,2"/>
+    <Setter Property="Background" Value="Transparent"/>
+    <Setter Property="Foreground" Value="{DynamicResource ForegroundBrush}"/>
+    <Style.Triggers>
+      <Trigger Property="IsPointerOver" Value="True">
+        <Setter Property="Background" Value="{DynamicResource AccentBrushHover}"/>
+        <Setter Property="Foreground" Value="White"/>
+      </Trigger>
+      <Trigger Property="IsSelected" Value="True">
+        <Setter Property="Background" Value="{DynamicResource AccentBrush}"/>
+        <Setter Property="Foreground" Value="White"/>
+      </Trigger>
+    </Style.Triggers>
+  </Style>
+
+</ResourceDictionary>

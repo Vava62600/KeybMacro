@@ -1,0 +1,42 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="https://github.com/avaloniaui"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:vm="clr-namespace:KeybMacro.UI.ViewModels"
+        x:Class="KeybMacro.UI.Windows.SettingsWindow"
+        mc:Ignorable="d"
+        Title="Settings"
+        Width="400" Height="300"
+        CanResize="False">
+
+  <Design.DataContext>
+    <vm:SettingsViewModel/>
+  </Design.DataContext>
+
+  <StackPanel Margin="10" Spacing="10">
+    <TextBlock Text="Choose Theme:" FontWeight="Bold"/>
+    <ComboBox Items="{Binding Themes}" SelectedItem="{Binding SelectedTheme}" />
+
+    <TextBlock Text="Choose Palette:" FontWeight="Bold" Margin="0,10,0,0"/>
+    <ComboBox Items="{Binding Palettes}" SelectedItem="{Binding SelectedPalette}" />
+
+    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,20,0,0" Spacing="15">
+      <Button Content="Apply" Command="{Binding ApplyCommand}" Width="100"/>
+      <Button Content="Save" Command="{Binding SaveCommand}" Width="100"/>
+      <Button Content="Close" Command="{Binding CloseCommand}" Width="100"/>
+    </StackPanel>
+
+    <Border Background="{DynamicResource BackgroundBrush}" 
+            BorderBrush="{DynamicResource ControlBorderBrush}" 
+            BorderThickness="1"
+            Margin="0,20,0,0" Padding="10" CornerRadius="6"
+            Height="80"
+            HorizontalAlignment="Stretch"
+            VerticalAlignment="Center">
+      <TextBlock Text="Preview area: sample text and button"
+                 Foreground="{DynamicResource ForegroundBrush}" 
+                 FontSize="14" 
+                 VerticalAlignment="Center" />
+    </Border>
+  </StackPanel>
+</Window>
