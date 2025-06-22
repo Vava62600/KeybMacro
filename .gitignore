@@ -1,32 +1,55 @@
-# Prerequisites
-*.d
+# --- .NET / C# ---
+build/
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+# Build / publish / logs
+*.log
+*.db
+*.pid
+*.pdb
+*.cache
+*.tmp
+*.bak
 
-# Precompiled Headers
-*.gch
-*.pch
+# Avalonia previewer cache
+.avalonia/
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
+# VSCode only
+.vscode/
+.vscode-test/
+.csproj
+
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Rider / JetBrains (facultatif)
+.idea/
+
+# Configs, backup
+*.swp
+*.orig
+*.old
+
+# Plugin temp files
+Plugins/.cache/
+Plugins/temp/
+
+# Library files
 *.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
 *.exe
-*.out
-*.app
+Library/
+# NuGet packages
+*.nupkg
+# Local settings
+*.local
+# User-specific files
+*.userprefs
+# Temporary files
+*.tmp

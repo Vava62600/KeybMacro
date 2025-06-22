@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/KeybMacro/KeybMacro/assets/github/logo.png" alt="KeybMacro Logo" width="150"/>
+  <img src="assets/github/logo.png" alt="KeybMacro Logo" width="150"/>
 </p>
 
 <h1 align="center">KeybMacro (KeyBoardMacro)</h1>
@@ -37,4 +37,4 @@
 
 📦 installation
 
-Téléchargez la dernière version <a href="https://github.com/vava62600/KeybMacro/release/latest/KeybMacro.zip">exécutable</a> directement ou l'<a href="https://github.com/vava62600/KeybMacro/release/latest/KeybMacro_amd64.exe">installateur</a> sous Windows (version amd64 non arm64 ou i386). Pour linux nous n'avons pas encore de solution. Désolé d'avance
+Téléchargez la dernière version <a href="https://github.com/vava62600/KeybMacro/releases/latest/download/KeybMacro.zip">exécutable</a> directement et l'<a href="https://github.com/Vava62600/KeybMacro/releases/latest/download/KeybMacro_amd64.exe">installateur</a> sous Windows (version amd64 non arm64 ou i386). Pour linux nous n'avons pas encore de solution, elle devrait arriver d'ici peu
