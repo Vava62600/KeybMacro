@@ -2,10 +2,10 @@
   <img src="assets/github/logo.png" alt="KeybMacro Logo" width="150"/>
 </p>
 
-<h1 align="center">KeybMacro (KeyBoardMacro)</h1>
+<h1 align="center">KeybMacro (KeyboardMacro)</h1>
 
 <p align="center">
-  🔧 Automatisation clavier & souris pour Windows – basé sur Qt en C++
+  🔧 Automatisation clavier & souris pour Windows et Linux – basé sur Avalonia et écrit en C#, C++, HTML et en Python
 </p>
 
 <p align="center">
@@ -21,12 +21,16 @@
 
 ## Présentation
 
+<<<<<<< HEAD
 **KeybMacro** est un logiciel open-source sous Windows permettant d'automatiser des séquences clavier et souris. Développé en **C++, C et Python avec la librarie Qt**, il est conçu pour être rapide, personnalisable et simple d'utilisation.
+=======
+**KeybMacro** est un logiciel open-source sous Windows permettant d'automatiser des séquences clavier et souris. Développé en **C#, C++, HTML et Python avec la librarie Avalonia**, il est conçu pour être rapide, personnalisable et simple d'utilisation.
+>>>>>>> fac8a031a91165b21a9df3dd4bf6ae28fb06303f
 
 ### Fonctionnalités :
 
 - 🎯 Création de macros clavier et souris
-- 🖱️ Interface Qt intuitive
+- 🖱️ Interface Avalonia intuitive
 - ⏱️ Délai personnalisable entre les actions
 - 🔁 Répétition en boucle des macros
 - 📁 Sauvegarde de profils utilisateurs
@@ -37,4 +41,8 @@
 
 📦 installation
 
+<<<<<<< HEAD
 Téléchargez la dernière version <a href="https://github.com/vava62600/KeybMacro/releases/latest/download/KeybMacro.zip">exécutable</a> directement et l'<a href="https://github.com/Vava62600/KeybMacro/releases/latest/download/KeybMacro_amd64.exe">installateur</a> sous Windows (version amd64 non arm64 ou i386). Pour linux nous n'avons pas encore de solution, elle devrait arriver d'ici peu
+=======
+Téléchargez la dernière version <a href="https://github.com/vava62600/KeybMacro/releases/latest/download/KeybMacro.zip">exécutable</a> directement ou l'<a href="https://github.com/Vava62600/KeybMacro/releases/latest/download/KeybMacro_amd64.exe">installateur</a> sous Windows (version amd64 non arm64 ou i386). Pour linux nous n'avons pas encore de solution, elle devrait arriver d'ici peu
+>>>>>>> fac8a031a91165b21a9df3dd4bf6ae28fb06303f
