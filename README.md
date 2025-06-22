@@ -2,7 +2,7 @@
   <img src="assets/github/logo.png" alt="KeybMacro Logo" width="150"/>
 </p>
 
-<h1 align="center">KeybMacro (KeyBoardMacro)</h1>
+<h1 align="center">KeybMacro (KeyboardMacro)</h1>
 
 <p align="center">
   🔧 Automatisation clavier & souris pour Windows et Linux – basé sur Avalonia et écrit en C#, C++, HTML et en Python
