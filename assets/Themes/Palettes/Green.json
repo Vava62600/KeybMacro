@@ -1,0 +1,99 @@
+{
+  "Meta": {
+    "Version": "1.0.0",
+    "LastUpdated": "2025-06-23",
+    "Author": "Vava62600"
+  },
+  "Theme": {
+    "Name": "Green Theme",
+    "Description": "A fresh green color palette for KeybMacro.",
+    "PrimaryColor": "#4CAF50",
+    "SecondaryColor": "#388E3C",
+    "AccentColor": "#81C784",
+    "TextColor": "#212121",
+    "BackgroundColor": "#FFFFFF"
+  },
+  "Palette": {
+    "Primary": "#4CAF50",
+    "Secondary": "#388E3C",
+    "Accent": "#81C784",
+    "Text": "#212121",
+    "Background": "#FFFFFF"
+  },
+  "StatusColors": {
+    "Error": "#F44336",
+    "Warning": "#FF9800",
+    "Success": "#4CAF50",
+    "Info": "#2196F3",
+    "Disabled": "#BDBDBD"
+  },
+  "Modes": {
+    "Light": {
+      "Primary": "#C8E6C9",
+      "Secondary": "#A5D6A7",
+      "Accent": "#E8F5E9",
+      "Text": "#212121",
+      "Background": "#FFFFFF"
+    },
+    "Dark": {
+      "Primary": "#1B5E20",
+      "Secondary": "#2E7D32",
+      "Accent": "#388E3C",
+      "Text": "#FFFFFF",
+      "Background": "#121212"
+    }
+  },
+  "Typography": {
+    "FontFamily": "Roboto, sans-serif",
+    "FontSize": "16px",
+    "FontWeight": "400",
+    "LineHeight": "1.5"
+  },
+  "Borders": {
+    "Radius": "4px",
+    "Width": "1px",
+    "Color": "#E0E0E0"
+  },
+  "Shadows": {
+    "Light": "0px 2px 4px rgba(0, 0, 0, 0.1)",
+    "Medium": "0px 4px 8px rgba(0, 0, 0, 0.1)",
+    "Heavy": "0px 6px 12px rgba(0, 0, 0, 0.1)"
+  },
+  "Components": {
+    "Button": {
+      "Primary": {
+        "Background": "#4CAF50",
+        "Text": "#FFFFFF",
+        "HoverBackground": "#388E3C",
+        "DisabledBackground": "#BDBDBD"
+      },
+      "Secondary": {
+        "Background": "#A5D6A7",
+        "Text": "#212121",
+        "HoverBackground": "#81C784",
+        "DisabledBackground": "#E8F5E9"
+      }
+    },
+    "Input": {
+      "BorderColor": "#E0E0E0",
+      "FocusBorderColor": "#4CAF50",
+      "PlaceholderTextColor": "#BDBDBD"
+    },
+    "Card": {
+      "Background": "#FFFFFF",
+      "Shadow": "0px 2px 4px rgba(0, 0, 0, 0.1)"
+    }
+  },
+  "Transitions": {
+    "Duration": "300ms",
+    "Easing": "ease-in-out"
+  },
+  "Grid": {
+    "Columns": 12,
+    "GutterWidth": "16px"
+  },
+  "Localization": {
+    "DefaultLanguage": "en-US",
+    "SupportedLanguages": ["en-US", "fr-FR"]
+  }
+}

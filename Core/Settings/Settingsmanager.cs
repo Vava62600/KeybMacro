@@ -9,7 +9,6 @@ namespace KeybMacro.Core.Settings
     {
         private static readonly string WindowsPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "KeybMacro", "config", "settings.json");
         private static readonly string LinuxPath = Path.Combine("/usr/share/keybmacro/config/settings.json");
-        private static readonly string MacOSPath = Path.Combine("/Library/Application Support/KeybMacro/config/settings.json");
 
         public static UserProfile CurrentProfile { get; private set; } = new();
 
@@ -33,13 +32,15 @@ namespace KeybMacro.Core.Settings
             var json = JsonSerializer.Serialize(CurrentProfile, new JsonSerializerOptions { WriteIndented = true });
             File.WriteAllText(path, json);
         }
-
         private static string GetConfigPath()
         {
             if (OperatingSystem.IsWindows()) return WindowsPath;
             if (OperatingSystem.IsLinux()) return LinuxPath;
-            if (OperatingSystem.IsMacOS()) return MacOSPath;
             return Path.Combine(".", "settings.json");
+        }
+        public static void ResetToDefault()
+        {
+            CurrentUserProfile = new UserProfile();
         }
     }
 }

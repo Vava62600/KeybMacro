@@ -1,12 +1,17 @@
-using System.Collections.Generic;
+using System;
 
 namespace KeybMacro.Core.Settings
 {
     public class UserProfile
     {
-        public string Language { get; set; } = "en";
-        public string Theme { get; set; } = "Default";
-        public string Palette { get; set; } = "Blue";
-        public Dictionary<string, string> CustomBindings { get; set; } = new();
+        public int LanguageIndex { get; set; } = 0; // 0=English, 1=French
+        public int ThemeIndex { get; set; } = 0; // Default theme index
+        public int PaletteIndex { get; set; } = 0; // Default palette index
+
+        public bool StartupAtBoot { get; set; } = false;
+        public bool AutoUpdate { get; set; } = true;
+        public bool DeveloperMode { get; set; } = false;
+        public bool DebugMode { get; set; } = false;
+        public bool DetailedLogs { get; set; } = false;
     }
 }

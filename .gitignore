@@ -22,7 +22,8 @@ obj/
 # VSCode only
 .vscode/
 .vscode-test/
-.csproj
+*.csproj
+*.sln
 
 
 # OS-specific
@@ -36,7 +37,7 @@ Thumbs.db
 *.swp
 *.orig
 *.old
-
+buildver.txt
 # Plugin temp files
 Plugins/.cache/
 Plugins/temp/
@@ -44,7 +45,6 @@ Plugins/temp/
 # Library files
 *.dll
 *.exe
-Library/
 # NuGet packages
 *.nupkg
 # Local settings
