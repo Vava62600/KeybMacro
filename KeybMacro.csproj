@@ -1,0 +1,56 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>preview</LangVersion>
+    <AssemblyName>KeybMacro</AssemblyName>
+    <RootNamespace>KeybMacro</RootNamespace>
+    <ApplicationIcon>Assets/Icons/app.ico</ApplicationIcon>
+    <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+    <Platforms>x64;x86</Platforms>
+    <StartupObject>KeybMacro.Program</StartupObject>
+    <Deterministic>true</Deterministic>
+    <InvariantGlobalization>true</InvariantGlobalization>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <Win32Resource>Assets/Icons/app.rc</Win32Resource>
+    <EnableDefaultItems>false</EnableDefaultItems>
+  </PropertyGroup>
+
+  <!-- Executables du projet -->
+  <ItemGroup>
+    <ProjectReference Include="Tray/Tray.csproj" />
+    <ProjectReference Include="Core/Core.csproj" />
+    <ProjectReference Include="Launcher/Launcher.csproj" />
+    <ProjectReference Include="Updater/Updater.csproj" />
+  </ItemGroup>
+
+  <!-- Libraries nécessaires -->
+  <ItemGroup>
+    <PackageReference Include="Avalonia" Version="11.0.6" />
+    <PackageReference Include="Avalonia.ReactiveUI" Version="11.0.6" />
+    <PackageReference Include="Avalonia.Desktop" Version="11.0.6" />
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.0" />
+    <PackageReference Include="System.Text.Json" Version="8.0.4" />
+    <PackageReference Include="NAudio" Version="2.1.0" />
+  </ItemGroup>
+
+  <!-- Contenu statique -->
+  <ItemGroup>
+    <None Include="Assets\**\*.*" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="Assets\**\*.*" CopyToOutputDirectory="PreserveNewest" />
+    <EmbeddedResource Include="Assets\Icons\**\*.svg" />
+    <EmbeddedResource Include="Assets\Themes\**\*.json" />
+  </ItemGroup>
+
+  <!-- Icônes et ressources -->
+  <ItemGroup>
+    <None Include="Assets\Icons\app.ico" Pack="true" />
+    <None Include="Assets\Icons\tray-light.png" />
+    <None Include="Assets\Icons\tray-dark.png" />
+  </ItemGroup>
+
+</Project>

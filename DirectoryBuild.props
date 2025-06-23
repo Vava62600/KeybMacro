@@ -1,0 +1,18 @@
+<Project>
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <WarningsAsErrors>true</WarningsAsErrors>
+    <Deterministic>true</Deterministic>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+
+    <AvaloniaVersion>11.0.0-preview6</AvaloniaVersion>
+    <NAudioVersion>2.1.0</NAudioVersion>
+    <SharpZipLibVersion>1.3.3</SharpZipLibVersion>
+    <SystemTextJsonVersion>8.0.0</SystemTextJsonVersion>
+    <MicrosoftExtensionsLoggingVersion>8.0.0</MicrosoftExtensionsLoggingVersion>
+    <SystemRuntimeInteropVersion>7.0.0</SystemRuntimeInteropVersion>
+  </PropertyGroup>
+</Project>

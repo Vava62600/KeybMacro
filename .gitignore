@@ -22,9 +22,6 @@ obj/
 # VSCode only
 .vscode/
 .vscode-test/
-*.csproj
-*.sln
-
 
 # OS-specific
 .DS_Store
@@ -38,6 +35,8 @@ Thumbs.db
 *.orig
 *.old
 buildver.txt
+*.vs/
+v17/
 # Plugin temp files
 Plugins/.cache/
 Plugins/temp/

@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <AssemblyName>KeybMacro.Updater</AssemblyName>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <RootNamespace>KeybMacro.Updater</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Core\Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- HTTP client for update checking -->
+    <PackageReference Include="System.Net.Http.Json" Version="8.0.0" />
+    <!-- For zip extraction -->
+    <PackageReference Include="SharpZipLib" Version="1.3.3" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <!-- Assets : Icons, Themes, Fonts -->
+    <None Update="..\Assets\Icons\**\*.*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>Assets\Icons\%(RecursiveDir)%(Filename)%(Extension)</Link>
+    </None>
+    <None Update="..\Assets\Themes\**\*.*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>Assets\Themes\%(RecursiveDir)%(Filename)%(Extension)</Link>
+    </None>
+    <None Update="..\Assets\Fonts\**\*.*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>Assets\Fonts\%(RecursiveDir)%(Filename)%(Extension)</Link>
+    </None>
+  </ItemGroup>
