@@ -1,3 +1,54 @@
 [submodule "Library/X11"]
 	path = Library/X11
 	url = https://gitlab.freedesktop.org/xorg/lib/libx11
+[submodule "Library/Avalonia"]
+	path = Library/Avalonia
+	url = https://github.com/AvaloniaUI/Avalonia.git
+
+[submodule "Library/ReactiveUI"]
+	path = Library/ReactiveUI
+	url = https://github.com/reactiveui/ReactiveUI.git
+
+[submodule "Library/MessageBox.Avalonia"]
+	path = Library/MessageBox.Avalonia
+	url = https://github.com/AvaloniaCommunity/MessageBox.Avalonia.git
+
+[submodule "Library/InputSimulatorCore"]
+	path = Library/InputSimulatorCore
+	url = https://github.com/michaelnoonan/inputsimulator.git
+
+[submodule "Library/DllImportGenerator"]
+    path = Library/DllImportGenerator
+    url = https://github.com/dotnet/DllImportGenerator.git
+
+[submodule "Library/EmbedIO"]
+	path = Library/EmbedIO
+	url = https://github.com/unosquare/embedio.git
+
+[submodule "Library/CredentialManagement"]
+    path = Library/CredentialManagement
+    url = https://github.com/davideicardi/CredentialManagement.git
+
+[submodule "Library/NAudio"]
+	path = Library/NAudio
+	url = https://github.com/naudio/NAudio.git
+
+[submodule "Library/MoonSharp"]
+	path = Library/MoonSharp
+	url = https://github.com/xanathar/moonsharp.git
+
+[submodule "Library/PythonNet"]
+	path = Library/PythonNet
+	url = https://github.com/pythonnet/pythonnet.git
+
+[submodule "Library/xUnit"]
+	path = Library/xUnit
+	url = https://github.com/xunit/xunit.git
+
+[submodule "Library/Serilog"]
+	path = Library/Serilog
+	url = https://github.com/serilog/serilog.git
+
+[submodule "Library/SharpZipLib"]
+	path = Library/SharpZipLib
+	url = https://github.com/icsharpcode/SharpZipLib.git
