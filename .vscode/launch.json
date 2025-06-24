@@ -1,24 +1,15 @@
 {
-  "version": "0.2.0",
-  "configurations": [
-    {
-      "name": "C/C++ Runner: Debug Session",
-      "type": "cppdbg",
-      "request": "launch",
-      "args": [],
-      "stopAtEntry": false,
-      "externalConsole": true,
-      "cwd": "d:/Projets/KeybMacro",
-      "program": "d:/Projets/KeybMacro/build/Debug/outDebug",
-      "MIMode": "gdb",
-      "miDebuggerPath": "gdb",
-      "setupCommands": [
+    "version": "0.2.0",
+    "configurations": [
         {
-          "description": "Enable pretty-printing for gdb",
-          "text": "-enable-pretty-printing",
-          "ignoreFailures": true
+            "name": ".NET Launch (console)",
+            "type": "coreclr",
+            "request": "launch",
+            "program": "${workspaceFolder}/bin/Debug/net8.0/KeybMacro.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "stopAtEntry": false,
+            "console": "internalConsole"
         }
-      ]
-    }
-  ]
+    ]
 }

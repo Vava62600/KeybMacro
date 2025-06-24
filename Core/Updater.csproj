@@ -36,3 +36,4 @@
       <Link>Assets\Fonts\%(RecursiveDir)%(Filename)%(Extension)</Link>
     </None>
   </ItemGroup>
+</Project>
