@@ -1,25 +1,37 @@
-name: Build and Deploy KeybMacro Documentation
+name: 📚 Génération Documentation Doxygen
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
+  workflow_dispatch:
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
+  generate-docs:
+    runs-on: windows-latest
+
+    env:
+      GH_TOKEN: ${{ secrets.GH_PAGES_DEPLOY_TOKEN }}
+      DOXYGEN_VERSION: 1.9.8
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
+      - name: 📦 Checkout code
+        uses: actions/checkout@v4
 
-    - name: Setup Doxygen
-      run: sudo apt-get install -y doxygen graphviz
+      - name: ⚙️ Installer Doxygen
+        uses: ssciwr/doxygen-install@v1
+        with:
+          version: ${{ env.DOXYGEN_VERSION }}
 
-    - name: Build documentation
-      run: doxygen Doxyfile
+      - name: 🎨 Cloner Doxygen Awesome
+        run: |
+          git clone https://github.com/jothepro/doxygen-awesome-css.git
+          xcopy /Y /E /I doxygen-awesome-css\* .\docs\awesome\
 
-    - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v4
-      with:
-        github_token: ${{ secrets.GH_TOKEN }}
-        publish_dir: ./docs/html
+      - name: 📄 Générer documentation
+        run: doxygen Doxyfile
+
+      - name: 🚀 Déployer sur GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GH_PAGES_DEPLOY_TOKEN }}
+          publish_dir: ./docs/html
