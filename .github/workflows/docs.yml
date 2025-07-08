@@ -1,0 +1,25 @@
+name: Build and Deploy KeybMacro Documentation
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Setup Doxygen
+      run: sudo apt-get install -y doxygen graphviz
+
+    - name: Build documentation
+      run: doxygen Doxyfile
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v4
+      with:
+        github_token: ${{ secrets.GH_TOKEN }}
+        publish_dir: ./docs/html
